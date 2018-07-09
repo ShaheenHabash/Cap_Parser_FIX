@@ -1,0 +1,38 @@
+﻿<Window x:Class="CAP_Parser_FIX.View.winNewOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="New order" Height="272" Width="800" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold">
+    <Grid>
+        <xctk:BusyIndicator Name="MybusyIndicator"  IsBusy="False" Background="Black" Margin="0,0,0,0" >
+            <Grid RenderTransformOrigin="0.504,0.488">
+                <Label Content="Account" Name="lblAccount" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="012-----2763" Name="txtAccount"  Margin="130,10,410,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Symbol" x:Name="lblSymbol" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="410,10,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="JO1100111011" x:Name="txtSymbol"  Margin="530,10,10,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Client Id" Name="lblClientId" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="457" Name="txtClientId"  Margin="130,40,410,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Side" x:Name="lblSide" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="410,40,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="1" x:Name="txtSide"  Margin="530,40,10,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Time In Force" x:Name="lblTimeInForce" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="0" x:Name="txtTimeInForce" Margin="130,70,410,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Quantity" x:Name="lblQuantity" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="410,70,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="1500" x:Name="txtQuantity"  Margin="530,70,10,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Price" x:Name="lblPrice" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="3.7" x:Name="txtPrice" Margin="130,100,410,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Station" x:Name="lblStation" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="410,100,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="350" x:Name="txtStation"  Margin="530,100,10,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Stop Px" x:Name="lblStopPx" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="" x:Name="txtStopPx" Margin="130,133,410,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Min Qty" x:Name="lblMinQty" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="410,133,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="" x:Name="txtMinQty"  Margin="530,133,10,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="MaxFloor" x:Name="lblMaxFloor" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="" x:Name="txtMaxFloor" Margin="130,166,410,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Expire Time" x:Name="lblExpireTime" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="410,166,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="" x:Name="txtExpireTime"  Margin="530,166,10,0"  Height="23" VerticalAlignment="Top"/>
+                <Button Margin="0,0,10,10" Name="btnSend" Click="btnSend_Click" Content="Send" HorizontalAlignment="Right" Width="60" Height="25" VerticalAlignment="Bottom"/>
+            </Grid>
+        </xctk:BusyIndicator>
+    </Grid>
+</Window>
+

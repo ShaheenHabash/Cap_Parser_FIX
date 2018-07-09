@@ -1,0 +1,22 @@
+﻿<Window x:Class="CAP_Parser_FIX.View.winOrderCancel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="Order cancel" Height="208" Width="400" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold">
+    <Grid>
+        <xctk:BusyIndicator Name="MybusyIndicator"  IsBusy="False" Background="Black" Margin="0,0,0,0" >
+            <Grid RenderTransformOrigin="0.504,0.488">
+                <Label Content="Order ID(37)" Name="lblOrigOrderID" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="20180624000003" Name="txtOrigOrderID"  Margin="130,10,0,0"  Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252"/>
+                <Label Content="Symbol" x:Name="lblSymbol" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="JO1100111011" x:Name="txtSymbol" Margin="130,40,0,0"  Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252"/>
+                <Label Content="Side" x:Name="lblSide" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="1" x:Name="txtSide" Margin="130,70,0,0"  Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252"/>
+                <Label Content="Quantity" x:Name="lblQuantity" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="1000" x:Name="txtQuantity" Margin="130,103,0,0"  Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="252"/>
+                <Button Margin="0,0,10,10" Name="btnSend" Click="btnSend_Click" Content="Send" HorizontalAlignment="Right" Width="60" Height="25" VerticalAlignment="Bottom"/>
+            </Grid>
+        </xctk:BusyIndicator>
+    </Grid>
+</Window>
+

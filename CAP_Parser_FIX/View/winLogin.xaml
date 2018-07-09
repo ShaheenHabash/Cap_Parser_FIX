@@ -1,0 +1,22 @@
+﻿<Window x:Class="Optiq_Parser_OEG.View.winLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="Logon" Height="200" Width="400" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold">
+    <Grid>
+        <xctk:BusyIndicator Name="MybusyIndicator"  IsBusy="False" Background="Black" Margin="0,0,0,0" >
+            <Grid RenderTransformOrigin="0.504,0.488">
+                <Label Content="User name" Name="lblUserName" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="" Name="txtUserName"  Margin="130,10,10,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Password" Name="lblPassword" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="" Name="txtPassword"  Margin="130,40,10,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Sender Comp ID" Name="lblSenderCompID" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="" Name="txtSenderCompID"  Margin="130,70,10,0"  Height="23" VerticalAlignment="Top"/>
+                <Label Content="Sender Sub ID" Name="lblSenderSubID" FlowDirection="LeftToRight" Height="26" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="115" />
+                <TextBox Text="" Name="txtSenderSubID" Margin="130,100,10,0"  Height="23" VerticalAlignment="Top"/>
+                <Button Margin="0,0,10,10" Name="btnLogon" Click="btnLogon_Click" Content="Logon" HorizontalAlignment="Right" Width="60" Height="25" VerticalAlignment="Bottom"/>
+
+            </Grid>
+        </xctk:BusyIndicator>
+    </Grid>
+</Window>
